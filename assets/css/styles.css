@@ -387,10 +387,12 @@ width: 100%;
 padding: 10px;
 }
 
+	/*
 #home-header nav ul li:nth-child(1), #home-paragraph-holder h1, #home-paragraph-holder p, #home-slideshow-holder img {
 animation-name: none;
 opacity: 1;
 }
+	*/
 	
 #home-paragraph-holder h1 {
 font-size: 2.2rem;
