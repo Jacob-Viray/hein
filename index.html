@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Amy Lynn Hein</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="Jacob Sire Viray">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+<header class="flex flex-center" id="home-header">
+<nav >
+<ul class="flex flex-center" id="nav-list">
+
+<li>
+<a href="#">
+Amy Lynn Hein
+</a>
+</li>
+	
+<li>
+<a href="#">
+Statement
+</a>
+</li>
+
+<li>
+<a href="#">
+Gallery
+</a>
+</li>
+
+<li>
+<a href="#">
+Instagram
+</a>
+</li>
+
+<li>
+<a href="#">
+Curriculum Vitae
+</a>
+</li>
+
+<li>
+<a href="#">
+Contact
+</a>
+</li>
+
+<li>
+<a href="#" id="nav-toggle">
+Menu &nbsp; &#9776;
+</a>
+</li>
+
+</ul>
+</nav>
+</header>
+
+<main id="main-home" class="flex flex-center">
+<div id="home-paragraph-holder" class="flex">
+<h1>Art, Self-Purpose</h1>
+<p>I create art to gain an understanding of self-purpose. I incorporate personal influences, stories, memories and experiences into my artwork.</p>
+</div>
+<div id="home-slideshow-holder" class="flex flex-center">
+<img src="assets/images/home-gallery/brush.JPG" alt="">
+</div>
+</main>
+
+<script>
+var navList=document.querySelector("nav");
+
+window.onload = function() {
+setTimeout(function() {
+navList.removeAttribute("id");
+}, 10);
+};
+
+document.getElementById("nav-toggle").addEventListener("click", function() {
+if (navList.id !== "nav-expanded") {
+navList.id ="nav-expanded";
+}
+else {
+navList.removeAttribute("id");
+}
+});
+</script>
+
+</body>
+</html>
