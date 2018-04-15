@@ -2,19 +2,17 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Amy Lynn Hein</title>
+<title>Gallery - Amy Lynn Hein</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="Jacob Sire Viray">
 <link rel="stylesheet" href="assets/css/styles.css">
-<link rel="stylesheet" href="assets/css/unslider.css">
-<link rel="stylesheet" href="assets/css/unslider-dots.css">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
 
-<header class="flex flex-justify-center" id="home-header">
+<header class="flex flex-justify-center">
 <nav >
 <ul class="flex flex-center" id="nav-list">
 
@@ -37,7 +35,7 @@ Curriculum Vitae
 </li>
 
 <li>
-<a href="gallery.html">
+<a href="gallery.html" class="active-page">
 Gallery
 </a>
 </li>	
@@ -64,40 +62,28 @@ Menu &nbsp; &#9776;
 </nav>
 </header>
 
-<main id="main-home">
-	
-<section class="flex flex-center">
-<div id="home-paragraph-holder" class="flex">
-<h1>Art, Self-Purpose</h1>
-<p>I create art to gain an understanding of self-purpose. I incorporate personal influences, stories, memories and experiences into my artwork.</p>
-</div>
-<div id="home-slideshow-holder">
-<div class="fading-slider">
-<ul>
-<li><img src="assets/images/home-gallery/brush.JPG" alt=""></li>
-<li><img src="assets/images/home-gallery/jar.png" alt=""></li>
-<li><img src="assets/images/home-gallery/mold.png" alt=""></li>
-</ul>
-</div>
-</div>
-</section>	
+<main id="main-gallery" class="flex flex-center">
 
-<div class="down-arrow"></div>	
-	
-<hr>
-	
-<section class="flex">
-<h2>layout test</h2>
+<h2>Category Layout Test</h2>
+<section class="flex flex-center">
 <figure></figure>
 <figure></figure>
 <figure></figure>
 <figure></figure>
 <figure></figure>
+</section>
+
+<h2>Category Layout Test</h2>
+<section class="flex flex-center">
 <figure></figure>
 <figure></figure>
 <figure></figure>
 <figure></figure>
 <figure></figure>
+</section>
+
+<h2>Category Layout Test</h2>
+<section class="flex flex-center">
 <figure></figure>
 <figure></figure>
 <figure></figure>
@@ -107,19 +93,7 @@ Menu &nbsp; &#9776;
 
 </main>
 	
-<script src="assets/js/jquery3.3.1-min.js"></script>
-<script src="assets/js/unslider-min.js"></script>
 
-<script>
-$('.fading-slider').unslider({
-animation: 'fade',
-autoplay: true,
-arrows: false,
-speed: 3000,
-delay: 6000
-});
-</script>
-	
 <script>
 var navList=document.querySelector("nav");
 

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Curriculum Vitae - Amy Lynn Hein</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="Jacob Sire Viray">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+<header class="flex flex-justify-center">
+<nav >
+<ul class="flex flex-center" id="nav-list">
+
+<li>
+<a href="index.html">
+Amy Lynn Hein
+</a>
+</li>
+
+<li>
+<a href="statement.html">
+Statement
+</a>
+</li>
+
+<li>
+<a href="curriculum-vitae.html" class="active-page">
+Curriculum Vitae
+</a>
+</li>
+
+<li>
+<a href="gallery.html">
+Gallery
+</a>
+</li>	
+	
+<li>
+<a href="https://www.instagram.com/amyheinart/">
+Instagram
+</a>
+</li>	
+	
+<li>
+<a href="contact.html">
+Contact
+</a>
+</li>
+
+<li>
+<a href="#" id="nav-toggle">
+Menu &nbsp; &#9776;
+</a>
+</li>
+
+</ul>
+</nav>
+</header>
+
+<main id="main-cv" class="flex flex-end-justify">
+
+<article>
+
+<section>
+<h2>Education</h2>
+<ul>
+<li><span>2018 </span><span>Alberta College of Art and Design, BFA major in Drawing</span></li>
+<li><span>2014 </span><span>Sheridan College, Visual and Creative Arts Advanced Diploma</span></li>
+<li><span>2010 </span><span>International Baccalaureate Art Certificate</span></li>
+</ul>
+</section>
+
+<section>
+<h2>Exhibition List</h2>
+<ul>
+<li><h3>Solo Exhibitions</h3></li>
+<li><span>2018 </span><span>Gather. Preserve. Repeat., The Marion Nicoll Gallery, Calgary</span></li>
+<li><span>2016 </span><span>Footsteps, Lindsay Ontario City Hall</span></li>
+
+<li style="padding-top: 20px;"><h3>Group Exhibitions</h3></li>
+<li><span>2018 </span><span>BFA Grad Show, ACAD, Calgary AB</span></li>
+<li><span>2018 </span><span>So You’re a Drawing Major, What Do You Draw, ACAD Drawing Exhibition, Calgary AB</span></li>
+<li><span>2016 </span><span>Art Battle, Cultural Art Gala, Kawartha Art Gallery, Lindsay ON</span></li>
+<li><span>2016 </span><span>Kawartha Art Gallery Juried Art Exhibition</span></li>
+<li><span>2015 </span><span>Kawartha Art Gallery Juried Art Exhibition</span></li>
+<li><span>2014 </span><span>Toronto Outdoor Art Exhibition, Toronto ON</span></li>
+<li><span>2014 </span><span>Visual and Creative Arts Graduating Exhibition, Sheridan College, Oakville ON</span></li>
+<li><span>2010 </span><span>6th Annual Student Juried Art Exhibition, Lindsay Art Gallery</span></li>
+<li><span>2010 </span><span>International Baccalaureate Art Exhibit, Art on Kent Gallery, Lindsay ON</span></li>
+</ul>
+</section>
+
+<section>
+<h2>Awards</h2>
+<ul>
+<li><span>2018 </span><span>Drawing Major Innovative Project Scholarship, presented by the Alberta College of Art + Design</span></li>
+<li><span>2017 </span><span>3rd Year Drawing Major Innovative Project Scholarship, presented by the Alberta College of Art + Design</span></li>
+<li><span>2016 </span><span>The Emerging Artist Award, presented by The Kawartha Art Gallery</span></li>
+<li><span>2014 </span><span>The Alumni Award of Excellence, presented by Sheridan College</span></li>
+<li><span>2010 </span><span>Technical Skill and Use of Colour Award, presented by the Lindsay Art Gallery</span></li>
+</ul>
+</section>
+
+<section>
+<h2>Publications</h2>
+<ul>
+<li><span>2014 </span><span>Book Illustrator, A Forever Home, children’s story</span></li>
+</ul>
+</section>
+	
+<section>
+<h2>Related Activities</h2>
+<ul>
+<li><span>2018 </span><span>Children’s Private Art Tutor (ongoing)</span></li>
+<li><span>2016 </span><span>Art Instructor, summer drawing and painting classes for kids, City of Kawartha Lakes</span></li>
+<li><span>2016 </span><span>The Monocle Integrated Art Camp Painting Instructor</span></li>
+<li><span>2016 </span><span>The Kawartha Art Gallery Art Camp Painting Instructor</span></li>
+<li><span>2013 </span><span>Figure Drawing and Painting Peer Tutor, Sheridan College</span></li>
+<li><span>2013 </span><span>International Centre Mural Proposal Project, Sheridan College</span></li> 
+</ul>
+</section>
+
+</article>
+
+</main>
+	
+
+<script>
+var navList=document.querySelector("nav");
+
+window.onload = function() {
+setTimeout(function() {
+navList.removeAttribute("id");
+}, 10);
+};
+
+document.getElementById("nav-toggle").addEventListener("click", function() {
+if (navList.id !== "nav-expanded") {
+navList.id ="nav-expanded";
+}
+else {
+navList.removeAttribute("id");
+}
+});
+</script>
+	
+</body>
+</html>
