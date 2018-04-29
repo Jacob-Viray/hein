@@ -1,2 +1,2 @@
 # hein
-css only flexbox and anims
+css focused flexbox and basic anims
