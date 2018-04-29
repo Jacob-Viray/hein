@@ -101,7 +101,8 @@ margin: 0 auto;
 #main-cv section h2, #main-cv section ul,
 #main-gallery h2, 
 #main-gallery .gallery-thumbs-holder,
-#main-contact p {
+#main-contact p, 
+#main-project h1, #main-project p, #main-project section:nth-of-type(2) a img, #main-project #return-to-gallery {
 animation-iteration-count: 1;
 animation-timing-function: cubic-bezier(0.23,0.12,0.31,0.78);
 animation-fill-mode: forwards;
@@ -307,11 +308,11 @@ padding-bottom: 200px;
 }
 
 #main-statement h1, h2 {
-font-size: 4rem;
+font-size: 2rem;
 font-weight: normal;
 text-align: right;
-line-height: 4.8rem;
-padding: 0 60px 30px 0;
+line-height: 3.8rem;
+padding-right: 20px;
 max-width: 380px;
 animation-name: slideFromLeft;
 animation-delay: .65s;
@@ -321,7 +322,7 @@ animation-delay: .65s;
 animation-name: fadeIn;
 animation-delay: 1.65s;
 width: 100%;
-margin: 100px 0;
+margin: 80px 0;
 }
 
 #main-statement article section {
@@ -331,11 +332,7 @@ animation-delay: .65s;
 }
 
 #main-statement article section:first-of-type {
-padding-top: 100px;
-}
-
-#main-statement article section:first-of-type p::first-letter {
-font-size: 2rem;
+padding-top: 60px;
 }
 
 #main-statement article section p {
@@ -370,7 +367,7 @@ justify-content: space-around;
 #main-gallery h2 {
 font-size: 2rem;
 text-align: center;
-padding: 60px 10px 0 10px;
+padding: 60px 20px 0 10px;
 margin-right: -80px;
 animation-name: fadeIn;
 animation-delay: 0.35s;
@@ -379,7 +376,7 @@ animation-delay: 0.35s;
 #main-gallery section {
 padding: 20px 0 40px 0;
 animation-name: slideFromBottom;
-animation-delay: 1.5s;
+animation-delay: 1s;
 }
 
 #main-gallery hr {
@@ -412,7 +409,7 @@ opacity: 0.65;
 }
 
 .gallery-thumbs-holder figure figcaption {
-padding: 10px 20px;
+padding: 10px 0;
 line-height: 1.6rem;
 text-align: center;
 }
@@ -442,7 +439,7 @@ max-width: 75vw;
 
 #main-cv section h2 {
 padding-right: 45px;
-font-size: 2.4rem;
+font-size: 1.8rem;
 font-weight: 400;
 animation-name: fadeIn;
 animation-delay: 2.25s;
@@ -550,32 +547,82 @@ max-width: 800px;
 font-size: 2.4rem;
 line-height: 2.8rem;
 padding-bottom: 10px;
+animation-name: slideFromLeft;
+animation-delay: 0.35s;
 }
 
 #main-project section p {
-line-height: 1.8rem;
+line-height: 1.6rem;
 padding-right: 30px;
+animation-name: slideFromLeft;
+animation-delay: 1s;
 }
 
 #main-project section a img {
 transition-duration: 1s;
+animation-name: slideFromBottom;
+}
+
+#main-project section a:first-of-type img {
+animation-delay: 1.5s;
+}
+
+#main-project section a:nth-of-type(2) img {
+animation-delay: 1.6s;
+}
+
+#main-project section a:nth-of-type(3) img {
+animation-delay: 2.1s;
+}
+
+#main-project section a:nth-of-type(4) img {
+animation-delay: 1.8s;
+}
+
+#main-project section a:nth-of-type(5) img {
+animation-delay: 1.7s;
+}
+
+#main-project section a:nth-of-type(6) img {
+animation-delay: 2.4s;
+}
+
+#main-project section a:nth-of-type(7) img {
+animation-delay: 1.8s;
+}
+
+#main-project section a:nth-of-type(8) img {
+animation-delay: 1.6s;
+}
+
+#main-project section a:nth-of-type(9) img {
+animation-delay: 2.3s;
+}
+
+#main-project section a:nth-of-type(10) img {
+animation-delay: 1.9s;
+}
+
+#main-project a img {
+animation-delay: 2.5s;
 }
 
 #main-project section a img:hover {
 opacity: 0.65;
 }
 
-#main-project section:nth-of-type(2) a:first-of-type img {
-flex-grow: 2;
-width: 100%;
-margin-bottom: 30px;
-border-radius: 5px 100px;
-}
-
-#main-project section:nth-of-type(2) a:not(:first-of-type) img {
+#main-project section:nth-of-type(2) a img {
 margin: 10px;
 width: 140px;
 border-radius: 50%;
+}
+
+#return-to-gallery {
+padding: 90px 30px 30px 0;
+text-align: center;
+width: 100%;
+animation-name: fadeIn;
+animation-delay: 3.5s;
 }
 
 /* project page end */
@@ -639,7 +686,6 @@ max-width: 80vw;
 
 @media all and (max-width: 1150px) {
 #main-cv section h2 {
-font-size: 1.8rem;
 padding-right: 25px;
 }
 	
@@ -700,8 +746,6 @@ top: 100px;
 max-width: none;
 padding: 0;
 text-align: center;
-font-size: 3.4rem;
-line-height: 3.4rem;
 }
 	
 #main-statement article section p {
@@ -730,7 +774,7 @@ justify-content: center;
 padding-right: 15px;
 }	
 
-#main-project section:nth-of-type(2) a:not(:first-of-type) img {
+#main-project section:nth-of-type(2) a img {
 margin: 10px;
 width: 120px;
 }
@@ -787,6 +831,7 @@ height: auto;
 
 #main-cv {
 max-width: 100vw;
+top: 8vh;
 }
 
 #main-cv article {
@@ -800,6 +845,8 @@ display: block;
 #main-cv section h2 {
 animation-delay: 0s;
 padding-right: 0;
+max-width: none;
+text-align: center;
 }
 
 #main-cv section ul {
@@ -833,9 +880,8 @@ line-height: 1.5rem;
 padding-bottom: 30px;
 }
 	
-#main-project section:nth-of-type(2) a:not(:first-of-type) img {
+#main-project section:nth-of-type(2) a img {
 margin: 5px;
-width: 100px;
 }
 }
 
@@ -948,8 +994,9 @@ animation-name: fadeIn;
 animation-delay: 1s;
 }
 	
-#main-statement h1 {
-font-size: 3rem;
+#main-statement h1, 
+#main-statement h2 {
+font-size: 2rem;
 line-height: 3rem;
 animation-name: fadeIn;
 }
@@ -1005,11 +1052,17 @@ width: 100%;
 #main-project section:first-of-type h1 {
 font-size: 2rem;
 padding-right: 0;
+animation-name: fadeIn;
 }
 	
 #main-project section:first-of-type p {
 padding-right: 0;
 padding-bottom: 10px;
+animation-name: fadeIn;
+}
+	
+#main-project section a img {
+animation-name: fadeIn;
 }
 }
 
@@ -1047,14 +1100,6 @@ max-width: 90vw;
 #main-project {
 padding-top: 70px;
 }
-
-#main-project section:first-of-type {
-order: 2;
-}
-	
-#main-project section:nth-of-type(2) {
-order: 1;
-}
 	
 #main-project section:nth-oftype(3) {
 }
@@ -1067,14 +1112,6 @@ padding-bottom: 30px;
 #main-project section:first-of-type p {
 text-align: justify;
 line-height: 1.4rem;
-}
-	
-#main-project section:nth-of-type(2) a:first-of-type img {
-border-radius: 5px;
-}
-	
-#main-project section:nth-of-type(2) a:not(:first-of-type) {
-display: none;
 }
 }
 
