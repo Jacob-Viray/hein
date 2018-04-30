@@ -170,12 +170,14 @@
     z-index: 10001;
     top: 50%;
     margin-top: -3.75em; /* 60 */
-	border: 0;
+	border: none;
+	opacity: 1;
 }
+
 .imagelightbox-arrow:hover,
 .imagelightbox-arrow:focus {
-    background-color: #666;
-    background-color: rgba( 0, 0, 0, .75 );
+opacity: 0.4;
+	transition: opacity 0.35s ease-in-out;
 }
 .imagelightbox-arrow:active {
     background-color: #111;
@@ -196,13 +198,22 @@
 }
 .imagelightbox-arrow-left:before {
     border-left: none;
-    border-right-color: #fff;
+    border-right-color: #000;
     margin-left: -0.313em; /* 5 */
 }
 .imagelightbox-arrow-right:before {
     border-right: none;
-    border-left-color: #fff;
+    border-left-color: #000;
     margin-right: -0.313em; /* 5 */
+}
+
+@media all and (max-width:1070px) {
+.imagelightbox-arrow-left:before {
+    border-right-color: #fff;
+}
+.imagelightbox-arrow-right:before {
+    border-left-color: #fff;
+}
 }
 
 .imagelightbox-loading,
