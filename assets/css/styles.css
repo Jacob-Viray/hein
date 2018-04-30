@@ -96,11 +96,11 @@ border-width: 0 2px 2px 0;
 margin: 0 auto;
 }
 
-#home-paragraph-holder p, #home-slideshow-holder, #main-home .down-arrow, #main-home .gallery-thumbs-holder, 
+#home-paragraph-holder p, #home-slideshow-holder, #main-home .down-arrow, #main-home .gallery-thumbs-holder figure, 
 #main-statement h1, #main-statement h2, #main-statement article section, #main-statement hr,
 #main-cv section h2, #main-cv section ul,
 #main-gallery h2, 
-#main-gallery .gallery-thumbs-holder,
+#main-gallery .gallery-thumbs-holder figure,
 #main-contact p, 
 #main-project h1, #main-project p, #main-project section:nth-of-type(2) a img, #main-project #return-to-gallery {
 animation-iteration-count: 1;
@@ -375,8 +375,6 @@ animation-delay: 0.35s;
 
 #main-gallery section {
 padding: 20px 0 40px 0;
-animation-name: slideFromBottom;
-animation-delay: 1s;
 }
 
 #main-gallery hr {
@@ -392,6 +390,28 @@ justify-content: center;
 .gallery-thumbs-holder figure {
 width: 230px;
 margin: 10px 20px 60px 20px;
+animation-name: slideFromBottom;
+animation-delay: 3s;
+}
+
+.gallery-thumbs-holder figure:first-of-type {
+animation-delay: 1s;
+}
+
+.gallery-thumbs-holder figure:nth-of-type(2) {
+animation-delay: 1.8s;
+}
+
+.gallery-thumbs-holder figure:nth-of-type(3) {
+animation-delay: 1.4s;
+}
+
+.gallery-thumbs-holder figure:nth-of-type(4) {
+animation-delay: 2s;
+}
+
+.gallery-thumbs-holder figure:nth-of-type(5) {
+animation-delay: 2.4s;
 }
 
 .gallery-thumbs-holder figure img {
@@ -404,10 +424,12 @@ border-radius: 50%;
 transition-duration: 1s;
 }
 
-.gallery-thumbs-holder figure img:hover {
+.gallery-thumbs-holder figure img:hover, 
+.gallery-thumbs-holder figure img:focus {
 opacity: 0.65;
+transform: scale(1.05);
 }
-
+	
 .gallery-thumbs-holder figure figcaption {
 padding: 10px 0;
 line-height: 1.6rem;
@@ -558,6 +580,7 @@ animation-name: slideFromLeft;
 animation-delay: 1s;
 }
 
+#main-project section a, 
 #main-project section a img {
 transition-duration: 1s;
 animation-name: slideFromBottom;
@@ -607,8 +630,12 @@ animation-delay: 1.9s;
 animation-delay: 2.5s;
 }
 
-#main-project section a img:hover {
+#main-project section a:hover, 
+#main-project section a:focus, 
+#main-project section a img:hover, 
+#main-project section a img:focus {
 opacity: 0.65;
+transform: scale(1.05);
 }
 
 #main-project section:nth-of-type(2) a img {

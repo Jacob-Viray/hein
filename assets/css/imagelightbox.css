@@ -82,11 +82,11 @@
     top: 2.5em; /* 40 */
     right: 2.5em; /* 40 */
     border-radius: 50%;
-    transition: color .3s ease;
+    transition: background-color 0.5s ease;
 }
 
 .imagelightbox-close:hover {
-    background-color: #222;
+    background-color: #ddd;
 }
 
 .imagelightbox-close:before,
