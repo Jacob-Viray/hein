@@ -207,7 +207,7 @@ opacity: 0.4;
     margin-right: -0.313em; /* 5 */
 }
 
-@media all and (max-width:1070px) {
+@media all and (max-width:910px) {
 .imagelightbox-arrow-left:before {
     border-right-color: #fff;
 }
